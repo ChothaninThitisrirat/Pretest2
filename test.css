@@ -1,0 +1,160 @@
+* {
+    font-family: 'Rubik' ,sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgba(98,98,112,0.6) 40%, rgba(255,255,255,0.6) 100%), url('bg.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2em;
+}
+h2.head {
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 140px;
+    letter-spacing: 20px;
+    text-align: center;
+    animation-name: slidedowm;
+    animation-delay: 0.2ms;
+    animation-duration: 2s;
+
+}
+
+@keyframes slidedowm{
+    0% {transform: translateY(-110%);}
+    90% {transform: translateY(10%);}
+    100% {transform: translateY(0%);}
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.photo {
+    display: flex;
+    gap: 20px;  
+    justify-content: center;
+}
+
+figure{
+    position: relative;
+    width: 28%;
+}
+
+figure .item{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    opacity: 0;
+    transition: translate(-50%,-50%);
+}
+
+figure:hover .item{
+    opacity: 1;
+    color: white;
+}
+
+figure img{
+    width: 100%;   
+}
+
+figure:hover img{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.row {
+    display: flex;
+    flex-grow: 3;
+    padding: 0;
+    gap: 0;
+}
+
+article{
+    width: 25%;
+    height: 25vh;
+    color: white;
+    text-align: center;
+    
+}
+article:hover{
+    transform: scale(1.05);
+}
+.pink {
+    background-color: rgb(255, 0, 170);
+}
+
+.blue {
+    background-color: blue;
+}
+div h2{
+    font-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+}
+.weekitem {
+    background-color: white;
+    animation-name: slideright;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+@keyframes slideright {
+    0% {transform: translateX(-110%);}
+    90% {transform: translateX(5%);}
+    100% {transform: translateX(0%);}
+}
+
+.allfigure {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 0;
+    margin: 0;
+    background-color: black;
+    padding: 20px 300px 0px;
+}
+
+@keyframes slideup {
+    0% {transform: translateY(100%);}
+    90% {transform: translateY(-10%);}
+    100% {transform: translateY(0%);}
+}
+
+.colum{
+    animation-name: slideup;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+}
+
+.colum>img{
+    width: 300px;
+    opacity: 0.6;
+}
+
+.colum>img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
